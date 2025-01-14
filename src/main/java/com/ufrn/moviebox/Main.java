@@ -35,7 +35,7 @@ public class Main extends Application {
 
 
         Parent fxmlInitial = FXMLLoader.load(getClass().getResource("initial-view.fxml"));
-        initialScene = new Scene(fxmlInitial, 750, 422);
+        initialScene = new Scene(fxmlInitial, 675, 422);
 
 
         Parent fxmlLogin = FXMLLoader.load(getClass().getResource("login-view.fxml"));

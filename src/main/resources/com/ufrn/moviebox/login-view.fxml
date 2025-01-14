@@ -6,17 +6,18 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="422.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ufrn.moviebox.LoginController">
    <children>
-      <ImageView fitHeight="444.0" fitWidth="763.0" layoutX="-3.0">
+      <ImageView fitHeight="422.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../imagens/login.jpg" />
          </image>
       </ImageView>
-      <TextField fx:id="usuarioEntrarConta" layoutX="461.0" layoutY="206.0" onAction="#textFieldUsuario" prefHeight="32.0" prefWidth="196.0" style="-fx-background-color: white;" />
-      <TextField fx:id="senhaEntrarConta" layoutX="461.0" layoutY="270.0" onAction="#textFieldSenha" prefHeight="32.0" prefWidth="196.0" />
-      <Button fx:id="buttonEntrarConta" layoutX="461.0" layoutY="327.0" mnemonicParsing="false" onAction="#clickButtonEntrarConta" prefHeight="32.0" prefWidth="196.0" style="-fx-background-color: orange;" text="Entrar">
+      <TextField fx:id="usuarioEntrarConta" layoutX="444.0" layoutY="121.0" onAction="#textFieldUsuario" prefHeight="32.0" prefWidth="252.0" style="-fx-background-color: white;" />
+      <TextField fx:id="senhaEntrarConta" layoutX="444.0" layoutY="196.0" onAction="#textFieldSenha" prefHeight="32.0" prefWidth="252.0" />
+      <Button fx:id="buttonEntrarConta" layoutX="444.0" layoutY="280.0" mnemonicParsing="false" onAction="#clickButtonEntrarConta" prefHeight="32.0" prefWidth="252.0" style="-fx-background-color: orange;" text="Entrar">
          <font>
             <Font name="Ebrima" size="14.0" />
          </font>
@@ -24,6 +25,31 @@
       <Button fx:id="buttonVoltarTelaInitial" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#clickButtonVoltarTelaInitial" prefHeight="23.0" prefWidth="84.0" style="-fx-background-color: orange; -fx-background-radius: 6px; -fx-background-radius: 6px;" text="B A C K">
          <font>
             <Font name="Arial Black" size="10.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="444.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fazer login">
+         <font>
+            <Font name="Ebrima Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="444.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
+         <font>
+            <Font name="Ebrima" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="444.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha">
+         <font>
+            <Font name="Ebrima" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="455.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Não possui login?">
+         <font>
+            <Font name="Ebrima" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="buttonVoltarTelaLogin" layoutX="575.0" layoutY="362.0" mnemonicParsing="false" onAction="#clickButtonVoltarTelaLogin" style="-fx-background-color: black;" text="Criar conta" textFill="ORANGE">
+         <font>
+            <Font name="Ebrima Bold" size="12.0" />
          </font>
       </Button>
    </children>

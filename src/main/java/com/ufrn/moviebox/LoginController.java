@@ -16,6 +16,9 @@ public class LoginController {
     private Button buttonVoltarTelaInitial;
 
     @FXML
+    private Button buttonVoltarTelaLogin;
+
+    @FXML
     private TextField senhaEntrarConta;
 
     @FXML
@@ -50,10 +53,17 @@ public class LoginController {
     }
 
     @FXML
+    void clickButtonVoltarTelaLogin(ActionEvent event) {
+        System.out.println("ir para tela register");
+        Main.changeScreen("register");
+    }
+
+    @FXML
     void clickButtonVoltarTelaInitial(ActionEvent event) {
         System.out.println("Voltar Tela initial");
         Main.changeScreen("initial");
     }
+
 
     @FXML
     void textFieldSenha(ActionEvent event) {

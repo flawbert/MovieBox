@@ -6,19 +6,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ufrn.moviebox.InitialController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ufrn.moviebox.InitialController">
    <children>
-      <ImageView fitHeight="550.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="422.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../imagens/Initial.jpg" />
+            <Image url="@../../../imagens/telaInicio.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="loginButton" layoutX="27.0" layoutY="223.0" mnemonicParsing="false" onAction="#clickLoginButton" style="-fx-background-color: white; -fx-border-width: 2px; -fx-background-radius: 6px; -fx-border-radius: 6px;" text="Já é cliente? Fazer Login">
+      <Button fx:id="loginButton" layoutX="59.0" layoutY="242.0" mnemonicParsing="false" onAction="#clickLoginButton" prefHeight="33.0" prefWidth="181.0" style="-fx-background-color: orange;" text="Já é cliente? Fazer Login">
          <font>
             <Font name="Ebrima" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="buttonCriarConta" layoutX="23.0" layoutY="278.0" mnemonicParsing="false" onAction="#clickButtonCriarConta" style="-fx-background-color: white; -fx-border-width: 2px; -fx-background-radius: 6px; -fx-border-radius: 6px;" text="Criar sua conta MovieBox">
+      <Button fx:id="buttonCriarConta" layoutX="59.0" layoutY="296.0" mnemonicParsing="false" onAction="#clickButtonCriarConta" prefHeight="33.0" prefWidth="181.0" style="-fx-background-color: orange;" text="Criar sua conta MovieBox">
          <font>
             <Font name="Ebrima" size="12.0" />
          </font>
