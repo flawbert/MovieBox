@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="422.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ufrn.moviebox.MovieController">
+   <children>
+      <ImageView fitHeight="422.0" fitWidth="750.0" layoutX="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../imagens/movie.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonAlugarInterestelar" layoutX="164.0" layoutY="68.0" mnemonicParsing="false" onAction="#clickButtonAlugarInterestelar" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #e98437;">
+         <graphic>
+            <ImageView fitHeight="146.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../imagens/interestelar.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="buttonAlugarVorazes" layoutX="18.0" layoutY="68.0" mnemonicParsing="false" onAction="#clickButtonAlugarVorazes" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #e98437;">
+         <graphic>
+            <ImageView fitHeight="122.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../imagens/vorazes.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>
