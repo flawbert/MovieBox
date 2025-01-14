@@ -16,7 +16,7 @@
       </ImageView>
       <TextField fx:id="usuarioEntrarConta" layoutX="461.0" layoutY="206.0" onAction="#textFieldUsuario" prefHeight="32.0" prefWidth="196.0" style="-fx-background-color: white;" />
       <TextField fx:id="senhaEntrarConta" layoutX="461.0" layoutY="270.0" onAction="#textFieldSenha" prefHeight="32.0" prefWidth="196.0" />
-      <Button fx:id="buttonEntrarConta" layoutX="461.0" layoutY="327.0" mnemonicParsing="false" onAction="#clickButtonEntrarConta" prefHeight="32.0" prefWidth="196.0" style="-fx-background-color: #e98437;" text="Entrar">
+      <Button fx:id="buttonEntrarConta" layoutX="461.0" layoutY="327.0" mnemonicParsing="false" onAction="#clickButtonEntrarConta" prefHeight="32.0" prefWidth="196.0" style="-fx-background-color: orange;" text="Entrar">
          <font>
             <Font name="Ebrima" size="14.0" />
          </font>

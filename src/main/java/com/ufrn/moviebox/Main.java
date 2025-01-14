@@ -23,6 +23,7 @@ public class Main extends Application {
     public static Scene movieScene;
     public static Scene rest1Scene;
     public static Scene rest2Scene;
+    public static Scene endScene;
 
 
     @Override
@@ -56,6 +57,9 @@ public class Main extends Application {
         Parent fxmlRest2 = FXMLLoader.load(getClass().getResource("rest2-view.fxml"));
         rest2Scene = new Scene(fxmlRest2, 750, 422);
 
+        Parent fxmlEnd = FXMLLoader.load(getClass().getResource("end-view.fxml"));
+        endScene = new Scene(fxmlEnd, 750, 422);
+
         primaryStage.setScene(initialScene);
         primaryStage.show();
     }
@@ -80,6 +84,9 @@ public class Main extends Application {
                 break;
             case "rest2":
                 stage.setScene(rest2Scene);
+                break;
+            case "end":
+                stage.setScene(endScene);
                 break;
         }
     }
