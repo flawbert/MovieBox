@@ -24,6 +24,8 @@ public class Main extends Application {
     public static Scene rest1Scene;
     public static Scene rest2Scene;
     public static Scene endScene;
+    public static Scene listScene;
+    public static Scene userScene;
 
 
     @Override
@@ -60,6 +62,12 @@ public class Main extends Application {
         Parent fxmlEnd = FXMLLoader.load(getClass().getResource("end-view.fxml"));
         endScene = new Scene(fxmlEnd, 750, 422);
 
+        Parent fxmlList = FXMLLoader.load(getClass().getResource("list-view.fxml"));
+        listScene = new Scene(fxmlList, 750, 422);
+
+        Parent fxmlUser = FXMLLoader.load(getClass().getResource("user-view.fxml"));
+        userScene = new Scene(fxmlUser, 750, 422);
+
         primaryStage.setScene(initialScene);
         primaryStage.show();
     }
@@ -87,6 +95,12 @@ public class Main extends Application {
                 break;
             case "end":
                 stage.setScene(endScene);
+                break;
+            case "list":
+                stage.setScene(listScene);
+                break;
+            case "user":
+                stage.setScene(userScene);
                 break;
         }
     }

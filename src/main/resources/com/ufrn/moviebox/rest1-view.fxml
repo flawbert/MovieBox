@@ -30,5 +30,14 @@
             <MenuItem fx:id="restButton3MonthsVorazes" mnemonicParsing="false" onAction="#clickButtonRestVorazes3Months" text="3 meses por R$ 60,00" />
          </items>
       </MenuButton>
+      <Button fx:id="buttonUsuario" layoutX="674.0" layoutY="3.0" mnemonicParsing="false" onAction="#clickButtonUsuario" prefHeight="12.0" prefWidth="76.0" style="-fx-background-color: black;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../imagens/avatar.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>

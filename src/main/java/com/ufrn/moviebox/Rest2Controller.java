@@ -52,4 +52,10 @@ public class Rest2Controller {
         Main.changeScreen("end");
     }
 
+    @FXML
+    void clickButtonUsuario(ActionEvent event) {
+        System.out.println("user");
+        Main.changeScreen("user");
+    }
+
 }
