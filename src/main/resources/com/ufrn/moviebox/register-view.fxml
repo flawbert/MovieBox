@@ -26,9 +26,9 @@
       </Button>
       <Circle fill="#e98437" layoutX="471.0" layoutY="286.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
       <Button fx:id="buttonCriarConta" layoutX="466.0" layoutY="316.0" mnemonicParsing="false" onAction="#clickButtonCriarConta" prefHeight="25.0" prefWidth="252.0" style="-fx-background-color: orange;" text="Criar conta" />
-      <Button fx:id="buttonRegisterVoltarTelaInitial" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#clickButtonRegisterVoltarTelaInitial" prefHeight="23.0" prefWidth="84.0" style="-fx-background-color: orange; -fx-background-radius: 6px; -fx-background-radius: 6px;" text="B A C K">
+      <Button fx:id="buttonRegisterVoltarTelaInitial" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#clickButtonRegisterVoltarTelaInitial" prefHeight="23.0" prefWidth="84.0" style="-fx-background-color: orange; -fx-background-radius: 6px; -fx-background-radius: 6px;" text="Voltar">
          <font>
-            <Font name="Arial Black" size="10.0" />
+            <Font name="Ebrima" size="12.0" />
          </font>
       </Button>
       <TextField fx:id="cpfCriarConta" layoutX="466.0" layoutY="145.0" onAction="#textFieldCpf" prefHeight="25.0" prefWidth="252.0" />

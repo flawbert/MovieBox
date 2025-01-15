@@ -15,9 +15,9 @@
             <Image url="@../../../imagens/interestelarAlugar.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="button2VoltarTelaMovie" layoutX="8.0" layoutY="2.0" mnemonicParsing="false" onAction="#clickButton2VoltarTelaMovie" prefHeight="5.0" prefWidth="49.0" style="-fx-background-color: orange; -fx-background-radius: 6px; -fx-background-radius: 6px;" text="B A C K">
+      <Button fx:id="button2VoltarTelaMovie" layoutX="8.0" layoutY="2.0" mnemonicParsing="false" onAction="#clickButton2VoltarTelaMovie" prefHeight="22.0" prefWidth="54.0" style="-fx-background-color: orange; -fx-background-radius: 6px; -fx-background-radius: 6px;" text="Voltar">
          <font>
-            <Font name="Arial Black" size="5.0" />
+            <Font name="Ebrima" size="10.0" />
          </font>
       </Button>
       <MenuButton fx:id="buttonRestInterestellar" layoutX="480.0" layoutY="284.0" mnemonicParsing="false" onAction="#clickButtonRestInterestellar" prefHeight="33.0" prefWidth="205.0" style="-fx-background-color: orange;" text="                    Alugar filme">
