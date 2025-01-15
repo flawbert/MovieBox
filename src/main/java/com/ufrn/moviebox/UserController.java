@@ -11,10 +11,10 @@ public class UserController {
     private Button buttonVoltarTelaMovie;
 
     @FXML
-    private ListView<?> listViewPlanos;
+    private ListView<?> listViewFilmes;
 
     @FXML
-    private ListView<?> listViewUser;
+    private ListView<?> listViewDados;
 
     @FXML
     void clickButtonVoltarTelaMovie(ActionEvent event) {

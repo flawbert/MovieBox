@@ -13,7 +13,7 @@ public class EndController {
     private Button buttonEncerrarSessao;
 
     @FXML
-    private Button buttonInformations;
+    private Button buttonUsuario;
 
     @FXML
     void clickButtonBackTelaMovie(ActionEvent event) {
@@ -26,11 +26,9 @@ public class EndController {
         System.out.println("encerrar sessao");
         Main.changeScreen("initial");
     }
-
     @FXML
-    void clickButtonInformations(ActionEvent event) {
-        System.out.println("list view");
-        Main.changeScreen("list");
+    void clickButtonUsuario(ActionEvent event) {
+        System.out.println("user");
+        Main.changeScreen("user");
     }
-
 }

@@ -10,9 +10,9 @@
 
 <AnchorPane prefHeight="422.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ufrn.moviebox.UserController">
    <children>
-      <ImageView fitHeight="469.0" fitWidth="798.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="478.0" fitWidth="762.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../imagens/User.jpg" />
+            <Image url="@../../../imagens/user.jpg" />
          </image>
       </ImageView>
       <Text fill="WHITE" layoutX="587.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sua Conta">
@@ -20,9 +20,9 @@
             <Font name="Ebrima Bold" size="15.0" />
          </font>
       </Text>
-      <ListView fx:id="listViewUser" layoutX="111.0" layoutY="151.0" prefHeight="175.0" prefWidth="200.0" style="-fx-background-color: #ff8a00;" />
-      <ListView fx:id="listViewPlanos" layoutX="402.0" layoutY="151.0" prefHeight="175.0" prefWidth="200.0" style="-fx-background-color: #ff8a00;" />
-      <Button fx:id="buttonVoltarTelaMovie" layoutX="14.0" layoutY="54.0" mnemonicParsing="false" onAction="#clickButtonVoltarTelaMovie" prefHeight="12.0" prefWidth="58.0" style="-fx-border-radius: 10px; -fx-background-color: orange;" text="Voltar">
+      <ListView fx:id="listViewDados" layoutX="115.0" layoutY="147.0" prefHeight="175.0" prefWidth="200.0" style="-fx-background-color: #ff8a00;" />
+      <ListView fx:id="listViewFilmes" layoutX="411.0" layoutY="147.0" prefHeight="175.0" prefWidth="200.0" style="-fx-background-color: #ff8a00;" />
+      <Button fx:id="buttonVoltarTelaMovie" layoutX="14.0" layoutY="52.0" mnemonicParsing="false" onAction="#clickButtonVoltarTelaMovie" prefHeight="12.0" prefWidth="58.0" style="-fx-border-radius: 10px; -fx-background-color: orange;" text="Voltar">
          <font>
             <Font name="Ebrima" size="12.0" />
          </font>
