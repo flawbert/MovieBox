@@ -18,8 +18,8 @@ public class RentalService {
         }
 
         if (rentedMovie != null) {
-            loggedUser.addRentedMovies(rentedMovie);
             rentedMovie.calculatePrice(MoviePrice, rentalDays);
+            loggedUser.addRentedMovies(rentedMovie);
             System.out.println("O preço do aluguel do filme " + rentedMovie.getTitle() + " é: " + rentedMovie.getMovie_Price());
         } else {
             System.out.println("Filme não encontrado!");
