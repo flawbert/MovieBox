@@ -29,7 +29,8 @@ public class EndController {
 
     @FXML
     void clickButtonInformations(ActionEvent event) {
-
+        System.out.println("list view");
+        Main.changeScreen("list");
     }
 
 }

@@ -23,6 +23,12 @@ public class MovieController {
         System.out.println("Aluguel Vorazes");
         Main.changeScreen("rest1");
     }
+
+    @FXML
+    void clickButtonUsuario(ActionEvent event) {
+        System.out.println("user");
+        Main.changeScreen("user");
+    }
 }
 
 

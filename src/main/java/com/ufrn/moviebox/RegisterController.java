@@ -69,6 +69,8 @@ public class RegisterController {
 
     @FXML
     void clickButtonVoltarLogin(ActionEvent event) {
+        System.out.println("ir tela de login");
+        Main.changeScreen("login");
 
     }
 
