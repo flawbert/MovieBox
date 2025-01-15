@@ -6,6 +6,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert;
+import models.Session;
+import models.User;
 
 public class LoginController {
 
@@ -41,7 +43,9 @@ public class LoginController {
         }
 
         // Verificação de se o login é válido
-        if(userDao.validateLogin(email, senha)) {
+        User user = userDao.validateLogin(email, senha);
+        if(user != null) {
+            Session.setLoggedUser(user);
             System.out.println("Login realizado com sucesso");
             Main.changeScreen("movie");
         } else {

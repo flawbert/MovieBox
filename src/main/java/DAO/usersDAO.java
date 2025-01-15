@@ -43,9 +43,13 @@ public class usersDAO implements Serializable {
     }
 
     // Método para verificar login
-    public boolean validateLogin(String email, String password) {
+    public User validateLogin(String email, String password) {
         User user = findUserByEmail(email);
-        return user != null && user.getPassword().equals(password);
+        if (user != null && user.getPassword().equals(password)) {
+            return user;
+        } else {
+            return null;
+        }
     }
 
     public void salvarDados(){

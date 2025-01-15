@@ -1,11 +1,12 @@
 package DAO;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import models.Movie;
 import Enum.Movie_genre;
 
-public class MovieDAO {
+public class MovieDAO implements Serializable {
     private static final List<Movie> movies = new ArrayList<>();
 
     static {

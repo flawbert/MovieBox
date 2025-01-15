@@ -2,10 +2,14 @@ package models;
 
 import Enum.*;
 
-public class Movie implements IService{
+import java.io.Serializable;
+
+public class Movie implements IService, Serializable {
     private String title;
     private Movie_genre genre;
     private int Movie_ID;
+    private int Movie_Price;
+    private int RentalDays;
 
     public Movie() {}
     public Movie(String title, Movie_genre genre, int Movie_ID) {
@@ -15,8 +19,9 @@ public class Movie implements IService{
     }
 
     @Override
-    public Double calculatePrice() {
-        return 0.0;
+    public void calculatePrice(int Movie_Price, int RentalDays) {
+        this.Movie_Price = Movie_Price;
+        this.RentalDays = RentalDays;
     }
 
     public String getTitle() {
@@ -36,5 +41,17 @@ public class Movie implements IService{
     }
     public void setMovie_ID(int movie_ID) {
         Movie_ID = movie_ID;
+    }
+    public int getMovie_Price() {
+        return Movie_Price;
+    }
+    public void setMovie_Price(int movie_Price) {
+        Movie_Price = movie_Price;
+    }
+    public int getRentalDays() {
+        return RentalDays;
+    }
+    public void setRentalDays(int rentalDays) {
+        RentalDays = rentalDays;
     }
 }

@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import models.Session;
 import models.User;
 
 public class RegisterController {
@@ -50,6 +51,7 @@ public class RegisterController {
 
         // Tenta adicionar o usuário
         if (userDao.addUser(newUser)) {
+            Session.setLoggedUser(newUser);
             showAlert("Sucesso", "Usuário cadastrado com sucesso!");
             Main.changeScreen("login");
         } else {
