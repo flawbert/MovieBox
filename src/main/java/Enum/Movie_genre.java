@@ -5,5 +5,5 @@ public enum Movie_genre {
     ROMANCE,
     COMEDIA,
     TERROR,
-    SUSPENSE;
+    DRAMA;
 }
