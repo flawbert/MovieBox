@@ -49,8 +49,15 @@ public class Rest1Controller {
         if (loggedUser != null) {
             try {
                 RentalService rentalService = new RentalService();
-                rentalService.rentMovie(loggedUser, 1, 30, 30);
-                userDao.salvarDados();
+                if( rentalService.alreadyRentedMovie(loggedUser, 1) == true) {
+                    System.out.println("filme já alugado");
+                    Main.changeScreen("movie");
+                } else {
+                    rentalService.rentMovie(loggedUser, 1, 30, 30);
+                    userDao.salvarDados();
+                    System.out.println("filme alugado com sucesso");
+                    Main.changeScreen("end");
+                }
             } catch (Exception e) {
                 // Captura erros ao alugar o filme ou salvar os dados
                 e.printStackTrace();
@@ -59,8 +66,6 @@ public class Rest1Controller {
             }
         }
 
-        System.out.println("filme alugado");
-        Main.changeScreen("end");
     }
 
     @FXML
@@ -70,8 +75,15 @@ public class Rest1Controller {
         if (loggedUser != null) {
             try {
                 RentalService rentalService = new RentalService();
-                rentalService.rentMovie(loggedUser, 1, 90, 60);
-                userDao.salvarDados();
+                if( rentalService.alreadyRentedMovie(loggedUser, 1) == true) {
+                    System.out.println("filme já alugado");
+                    Main.changeScreen("movie");
+                } else {
+                    rentalService.rentMovie(loggedUser, 1, 90, 60);
+                    userDao.salvarDados();
+                    System.out.println("filme alugado com sucesso");
+                    Main.changeScreen("end");
+                }
             } catch (Exception e) {
                 e.printStackTrace();
                 showAlert("Erro", "Ocorreu um erro ao processar o aluguel ou salvar os dados.");
@@ -79,8 +91,6 @@ public class Rest1Controller {
 
         }
 
-        System.out.println("filme alugado");
-        Main.changeScreen("end");
     }
 
     @FXML
@@ -90,16 +100,21 @@ public class Rest1Controller {
         if (loggedUser != null) {
             try {
                 RentalService rentalService = new RentalService();
-                rentalService.rentMovie(loggedUser, 1, 7, 10);
-                userDao.salvarDados();
+                if( rentalService.alreadyRentedMovie(loggedUser, 1) == true) {
+                    System.out.println("filme já alugado");
+                    Main.changeScreen("movie");
+                } else {
+                    rentalService.rentMovie(loggedUser, 1, 7, 10);
+                    userDao.salvarDados();
+                    System.out.println("filme alugado com sucesso");
+                    Main.changeScreen("end");
+                }
             } catch (Exception e) {
                 e.printStackTrace();
                 showAlert("Erro", "Ocorreu um erro ao processar o aluguel ou salvar os dados.");
             }
         }
 
-        System.out.println("filme alugado");
-        Main.changeScreen("end");
     }
 
     @FXML

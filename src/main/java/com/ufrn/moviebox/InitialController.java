@@ -17,13 +17,13 @@ public class InitialController {
 
     @FXML
     void clickButtonCriarConta(ActionEvent event) {
-        System.out.println("entrar na conta");
+        System.out.println("criar conta");
         Main.changeScreen("register");
     }
 
     @FXML
     void clickLoginButton(ActionEvent event) {
-        System.out.println("criar conta");
+        System.out.println("entrar na conta");
         Main.changeScreen("login");
     }
 
