@@ -22,6 +22,8 @@
       </Text>
       <ListView fx:id="listViewDados" layoutX="115.0" layoutY="147.0" prefHeight="175.0" prefWidth="200.0" style="-fx-background-color: #ff8a00;" />
       <ListView fx:id="listViewFilmes" layoutX="411.0" layoutY="147.0" prefHeight="175.0" prefWidth="200.0" style="-fx-background-color: #ff8a00;" />
+      <Button fx:id="buttonMostrarDados" layoutX="115.0" layoutY="340.0" mnemonicParsing="false" onAction="#clickMostrarDados" prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: orange;" text="Mostrar Dados" />
+      <Button fx:id="buttonMostrarFilmes" layoutX="411.0" layoutY="340.0" mnemonicParsing="false" onAction="#clickMostrarFilmes" prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: orange;" text="Mostrar Filmes" />
       <Button fx:id="buttonVoltarTelaMovie" layoutX="14.0" layoutY="52.0" mnemonicParsing="false" onAction="#clickButtonVoltarTelaMovie" prefHeight="12.0" prefWidth="58.0" style="-fx-border-radius: 10px; -fx-background-color: orange;" text="Voltar">
          <font>
             <Font name="Ebrima" size="12.0" />
