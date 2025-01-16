@@ -9,6 +9,8 @@ import models.Session;
 import models.User;
 
 public class UserController {
+    @FXML
+    private Button buttonEncerrarSessao;
 
     @FXML
     private Button buttonVoltarTelaMovie;
@@ -24,6 +26,12 @@ public class UserController {
 
     @FXML
     private ListView<String> listViewDados;
+
+    @FXML
+    void clickButtonEncerrarSessao(ActionEvent event) {
+        System.out.println("voltar tela initial");
+        Main.changeScreen("initial");
+    }
 
     @FXML
     void clickButtonVoltarTelaMovie(ActionEvent event) {
