@@ -8,7 +8,7 @@ public class usersDAO implements Serializable {
     private static final long serialVersionUID = 1L;
     private final static String ARQUIVO_USERS = "users.ser";
 
-    private ArrayList<User> Users;
+    private static ArrayList<User> Users;
     private static usersDAO instance;
 
     private usersDAO() {

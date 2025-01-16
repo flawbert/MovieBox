@@ -11,7 +11,7 @@ import models.User;
 
 public class RegisterController {
 
-    private usersDAO userDao = usersDAO.getInstance();
+    private static usersDAO userDao = usersDAO.getInstance();
 
     @FXML
     private Button buttonCriarConta;
@@ -99,7 +99,7 @@ public class RegisterController {
 
     }
 
-    private void showAlert(String title, String content) {
+    private static void showAlert(String title, String content) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(title);
         alert.setHeaderText(null);

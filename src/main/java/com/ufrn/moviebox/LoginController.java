@@ -26,7 +26,7 @@ public class LoginController {
     @FXML
     private TextField usuarioEntrarConta;
 
-    private usersDAO userDao = usersDAO.getInstance();
+    private static usersDAO userDao = usersDAO.getInstance();
 
     @FXML
     void initialize() {
@@ -84,7 +84,7 @@ public class LoginController {
 
     }
 
-    private void showAlert(String title, String content) {
+    private static void showAlert(String title, String content) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(title);
         alert.setHeaderText(null);
