@@ -18,11 +18,17 @@ public class RentalService {
         }
 
         if (rentedMovie != null) {
-            rentedMovie.calculatePrice(MoviePrice, rentalDays);
-            loggedUser.addRentedMovies(rentedMovie);
-            System.out.println("O preço do aluguel do filme " + rentedMovie.getTitle() + " é: " + rentedMovie.getMovie_Price());
+            try {
+                rentedMovie.calculatePrice(MoviePrice, rentalDays);
+                loggedUser.addRentedMovies(rentedMovie);
+                System.out.println("O preço do aluguel do filme " + rentedMovie.getTitle() + " é: " + rentedMovie.getMovie_Price());
+            } catch (Exception e) {
+                e.printStackTrace();
+                System.out.println("Erro ao processar o aluguel do filme. Verifique os dados fornecidos.");
+            }
         } else {
             System.out.println("Filme não encontrado!");
         }
     }
+
 }

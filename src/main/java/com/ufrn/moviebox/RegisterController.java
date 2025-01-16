@@ -41,23 +41,28 @@ public class RegisterController {
         String password = senhaCriarConta.getText();
         String cpf = cpfCriarConta.getText();
 
-        // Verificando se a senha tem 6 caracteres, se tiver menos mostra um erro.
-        if (password.length() < 6) {
-            showAlert("Erro", "A senha deve ter pelo menos 6 caracteres!");
-            return;
+        try{
+            // Verificando se a senha tem 6 caracteres
+            if (password.length() < 6) {
+                showAlert("Erro", "A senha deve ter pelo menos 6 caracteres!");
+                return;
+            }
+
+            User newUser = new User(name, cpf, email, password);
+
+            // Tenta adicionar o usuário
+            if (userDao.addUser(newUser)) {
+                Session.setLoggedUser(newUser);
+                showAlert("Sucesso", "Usuário cadastrado com sucesso!");
+                Main.changeScreen("login");
+            } else {
+                showAlert("Erro", "Email já cadastrado!");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            showAlert("Erro", "Ocorreu um erro ao tentar cadastrar o usuário.");
+
         }
-
-        User newUser = new User(name, cpf, email, password);
-
-        // Tenta adicionar o usuário
-        if (userDao.addUser(newUser)) {
-            Session.setLoggedUser(newUser);
-            showAlert("Sucesso", "Usuário cadastrado com sucesso!");
-            Main.changeScreen("login");
-        } else {
-            showAlert("Erro", "Email já cadastrado!");
-        }
-
         Main.changeScreen("movie");
     }
 

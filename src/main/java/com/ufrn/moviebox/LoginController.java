@@ -39,20 +39,25 @@ public class LoginController {
         String email = usuarioEntrarConta.getText();
         String senha = senhaEntrarConta.getText();
 
-        // Verifica se os campos estão vazios
-        if(email.isEmpty() || senha.isEmpty()) {
-            showAlert("Erro", "Por favor, preencha todos os campos!");
-            return;
-        }
 
-        // Verificação de se o login é válido
-        User user = userDao.validateLogin(email, senha);
-        if(user != null) {
-            Session.setLoggedUser(user);
-            System.out.println("Login realizado com sucesso");
-            Main.changeScreen("movie");
-        } else {
-            showAlert("Erro", "Email ou senha incorretos!");
+        try {
+            if (email.isEmpty() || senha.isEmpty()) {
+                showAlert("Erro", "Por favor, preencha todos os campos!");
+                return;
+            }
+
+            // Verificação se o login é válido
+            User user = userDao.validateLogin(email, senha);
+            if (user != null) {
+                Session.setLoggedUser(user);
+                System.out.println("Login realizado com sucesso");
+                Main.changeScreen("movie");
+            } else {
+                showAlert("Erro", "Email ou senha incorretos!");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            showAlert("Erro", "Ocorreu um erro ao tentar realizar o login.");
         }
     }
 
