@@ -12,7 +12,7 @@
    <children>
       <ImageView fitHeight="478.0" fitWidth="762.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../imagens/user.jpg" />
+            <Image url="@../../../imagens/User.jpg" />
          </image>
       </ImageView>
       <Text fill="WHITE" layoutX="587.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sua Conta">
